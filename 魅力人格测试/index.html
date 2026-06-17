@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>别人为什么会偷偷记住你？</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="appContainer">
+        <!-- ===== 起始页 ===== -->
+        <div id="intro-screen" class="screen active">
+            <h1>别人为什么会<br>偷偷记住你？</h1>
+            <p class="subhead">测出你最容易让人上瘾的隐藏魅力</p>
+            <div class="warning-box">
+                <p>💡 共20题 · 根据直觉选择最符合自己的选项</p>
+                <p style="margin-top:6px; font-size:0.95rem;">结果将揭示你的魅力类型，还可能触发隐藏彩蛋✨</p>
+            </div>
+            <button id="start-btn" class="btn">开始测试 →</button>
+        </div>
+
+        <!-- ===== 答题页 ===== -->
+        <div id="question-screen" class="screen">
+            <div class="progress-bar">
+                <div class="progress" id="progressFill"></div>
+            </div>
+            <div class="question-counter" id="questionCounter">1 / 20</div>
+            <div class="question-text" id="questionText"></div>
+            <div class="options-grid" id="optionsContainer"></div>
+            <button id="next-btn" class="btn" disabled>下一题 →</button>
+        </div>
+
+        <!-- ===== 结果页 ===== -->
+        <div id="result-screen" class="screen">
+            <div class="result-title" id="resultTitle">✨ 你的魅力类型</div>
+            <div class="result-badge" id="resultBadge">领导者磁场</div>
+            <div class="result-description" id="resultDesc">
+                别人记住你的原因：气场。你给人的感觉是可靠、有主见……
+            </div>
+            <div class="result-tagline" id="resultTagline">“和你待在一起，会觉得未来有方向。”</div>
+            <div class="btn-group">
+                <button id="restart-btn" class="btn btn-secondary">🔄 重新测试</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
